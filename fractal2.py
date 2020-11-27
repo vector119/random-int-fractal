@@ -5,8 +5,8 @@
        where n is the number of sides. Map each index to an unique corner of the polygon.
     4. Generate a random integer within the same interval.
     5. Check the index of the set in which the integer lies.
-    6. Now, starting from P, proceed towards the corresponding corner and plot a point when
-       you have covered (n-1)th part of the way
+    6. Now, starting from P, proceed towards the corresponding corner and plot a point at
+       (n-1)th part of the way from the corner's position.
     7. Finally substitute this new point for P.
     8. Repeat the steps 4 through 7 as many times as you want.
     """
