@@ -23,14 +23,14 @@ def poly(n):  # plot, thus construct a regular unit polygon of n number of sides
 
 poly(n)
 
-fl = []  # initialize list for holding tuples of set of possible random values
-k = 1  # for use in the following for loop
-for i in range(0, n):  # populate fl with tuples of set of possible values that can be randomly generated
-    k0 = k
-    fl.append(tuple(range(n * i + k, n * i + k + n - 1)))
-    k -= 1
+# fl = []  # initialize list for holding tuples of set of possible random values
+# k = 1  # for use in the following for loop
+# for i in range(0, n):  # populate fl with tuples of set of possible values that can be randomly generated
+#     k0 = k
+#     fl.append(tuple(range(n * i + k, n * i + k + n - 1)))
+#     k -= 1
 
-print("set of values for " + str(n) + ": ", fl)
+# print("set of values for " + str(n) + ": ", fl)
 print(" ")
 
 if n%10 == 1:
@@ -54,15 +54,11 @@ print("Iteration underway. Generating figure. Please wait...")
 # main loop for iterating the process to generate a fractal
 for i in range(0, m):
     d = rint(1, n * (n - 1))
-    for z in range(0, n):
-        if d in fl[z]:
-            plt.plot(((x + real(l[z])) / (n - 1)), ((y + imag(l[z])) / (n - 1)), marker='.', markerfacecolor='green',
-                     markersize=10)
-            x = ((x + real(l[z])) / (n - 1))
-            y = ((y + imag(l[z])) / (n - 1))
-            break
-        else:
-            continue
+    z = int(d / (n - 1)) -1
+    plt.plot(((x + real(l[z])) / (n - 1)), ((y + imag(l[z])) / (n - 1)), marker='.', markerfacecolor='green',
+             markersize=10)
+    x = ((x + real(l[z])) / (n - 1))
+    y = ((y + imag(l[z])) / (n - 1))
 
 plt.show()
 
