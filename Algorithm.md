@@ -12,7 +12,7 @@ integer within **[1, n(n-1)]**. Hence, we need to store the possibilities in the
 
 3. Construct an _indexed_ array containing **n** _tuples_ each in turn containing sets of **(n-1)** integers _in order_
    starting from **1** through **n(n-1)**, call this array **fl** (short for **Factor List**).
-   * _The pseudo-code for accomplishing the above task is mentioned in another file_  
+   * _The pseudo-code for accomplishing the above task is mentioned in [another file](https://github.com/vector119/random-int-fractal/blob/main/pseudocode_fl.md)_  
    For example, if we consider a _pentagon_, then **n** == 5, thus **fl** will look like this:  
    **[(1, 2, 3, 4), (5, 6, 7, 8), (9, 10, 11, 12), (13, 14, 15, 16), (17, 18, 19, 20)]**
    
