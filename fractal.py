@@ -31,6 +31,7 @@ for i in range(0, n):  # populate fl with tuples of set of possible values that 
     k -= 1
 
 print("set of values for " + str(n) + ": ", fl)
+print(" ")
 
 if n%10 == 1:
     suffix = "st"
@@ -49,6 +50,7 @@ plt.plot(x, y, 'ro')  # plot the point chosen by the user
 
 m = int(input("enter the number of iterations you want: "))
 
+print("Iteration underway. Generating figure. Please wait...")
 # main loop for iterating the process to generate a fractal
 for i in range(0, m):
     d = rint(1, n * (n - 1))
@@ -63,3 +65,5 @@ for i in range(0, m):
             continue
 
 plt.show()
+
+print("Program finished!")
