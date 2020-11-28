@@ -26,7 +26,7 @@ n = int(input('enter the value of n: '))  # enter the number of sides
 l = tuple(urt(n))  # store the output of urt(n) as tuple
 
 
-def poly(n):  # plot, thus construct a regular unit polygon of side n
+def poly(n):  # plot, thus construct a regular unit polygon of n number of sides
     for i in l:
         plt.plot(real(i), imag(i), marker='.', markerfacecolor='green', markersize=1)
 
