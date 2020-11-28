@@ -1,15 +1,5 @@
-"""Program to generate a fractal by the following algorithm:
-    1. Choose a regular polygon of your choice and plot it.
-    2. Now consider any arbitrary point P of your choice on the plane.
-    3. Construct an indexed list of set of random integers within the interval [1,n * (n-1)]
-       where n is the number of sides. Map each index to an unique corner of the polygon.
-    4. Generate a random integer within the same interval.
-    5. Check the index of the set in which the integer lies.
-    6. Now, starting from P, proceed towards the corresponding corner and plot a point at
-       (n-1)th part of the way from the corner's position.
-    7. Finally substitute this new point for P.
-    8. Repeat the steps 4 through 7 as many times as you want.
-    """
+"""Program to generate a fractal
+    The Algorithm is mentioned in Algorithm.md"""
 
 from random import randint as rint
 
