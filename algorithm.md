@@ -35,4 +35,4 @@ possible outcomes when a **n(n-1)** faced dice were rolled, in **n** _tuples_ ea
       * **x = (x + _Re(z[i])_)/(n - 1)**
       * **y = (y + _Im(z[i])_)/(n - 1)**
    7. Break the loop.
-7. Iterate **_Step 7_** **m** times.
+7. Iterate **_Step 6_** **m** times.
